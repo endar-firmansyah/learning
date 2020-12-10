@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter
 import tkinter.messagebox
 #import tkmessagebox
-def proces():
+def process():
     number1=Entry.get(E1)
     number2=Entry.get(E2)
     operator=Entry.get(E3)
@@ -18,6 +18,8 @@ def proces():
         answer=number1/number2
     Entry.insert(E4,0,answer)
     print(answer)
+#except ValueError:
+#    tkmessagebox.showwarning("Warning","Please enter the value in integer")
 
 top = tkinter.Tk()
 L1 = Label(top, text="My calculator",).grid(row=0,column=1)
@@ -33,7 +35,7 @@ E3 = Entry(top, bd =5)
 E3.grid(row=3,column=1)
 E4 = Entry(top, bd =5)
 E4.grid(row=4,column=1)
-B=Button(top, text ="Submit",command = proces).grid(row=5,column=1,)
+B=Button(top, text ="Submit",command = process).grid(row=5,column=1,)
 
 top.mainloop()
 
