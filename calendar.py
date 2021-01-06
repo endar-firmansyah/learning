@@ -7,3 +7,10 @@ mm = int(input("Enter the month: "))
 # Display the calendar
 print(calendar.month(yy, mm))
 
+
+
+
+
+
+
+
