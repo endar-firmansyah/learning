@@ -17,7 +17,7 @@ print("The first largest number is:", list[-1])
 print("The second largest number is:", list[-2])
 
 # Printing the last largest number in the list
-print("The smallest number is:", list[0])
+print("The smallest number is:", list[3])
 
 # Using list comprehension
 # Print even number from list
